@@ -48,6 +48,21 @@ After thorough evaluation of the regression models, the Random Forest Regressor 
 
 These metrics indicate that the Random Forest Regressor provides the most accurate predictions compared to other models.
 
-### Why Random Forest Regressor?
+## Best Performing Model with Hyperparameter Tuning
 
-The Random Forest Regressor excels in capturing complex relationships in the data, which is crucial for accurate stock price predictions. Its ensemble learning approach, combining multiple decision tree regressors, allows it to handle non-linear patterns and outliers effectively.
+After thorough hyperparameter tuning, the Random Forest Regressor (RFR) has been fine-tuned to enhance its performance in predicting 'High', 'Low', and 'Close' stock prices based on historical market data. The model was tuned with the following hyperparameters:
+
+- **Number of Trees (n_estimators):** 100
+- **Maximum Depth of Trees (max_depth):** 10
+- **Minimum Samples Split (min_samples_split):** 2
+- **Minimum Samples Leaf (min_samples_leaf):** 1
+
+The hyperparameter-tuned Random Forest Regressor achieved improved evaluation metrics:
+
+- **Mean Squared Error (MSE):** 7526.81
+- **Mean Absolute Error (MAE):** 69.40
+- **R-squared (R²):** 0.9886
+
+### Significance of Hyperparameter Tuning
+
+Hyperparameter tuning played a crucial role in optimizing the Random Forest Regressor for our stock prediction task. The refined hyperparameters contribute to lower prediction errors and higher accuracy, as reflected in the improved evaluation metrics.
