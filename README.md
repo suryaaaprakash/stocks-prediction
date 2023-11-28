@@ -38,3 +38,16 @@ Here are the evaluation metrics for the multi-output regression models used in t
 - **Mean Absolute Error (MAE):** 62.68
 - **R-squared (R²):** 0.9994
 
+- ## Best Performing Model
+
+After thorough evaluation of the regression models, the Random Forest Regressor (RFR) has demonstrated superior performance in predicting 'High', 'Low', and 'Close' stock prices based on historical market data. The evaluation metrics for RFR are as follows:
+
+- **Mean Squared Error (MSE):** 8803.88
+- **Mean Absolute Error (MAE):** 64.37
+- **R-squared (R²):** 0.9994
+
+These metrics indicate that the Random Forest Regressor provides the most accurate predictions compared to other models.
+
+### Why Random Forest Regressor?
+
+The Random Forest Regressor excels in capturing complex relationships in the data, which is crucial for accurate stock price predictions. Its ensemble learning approach, combining multiple decision tree regressors, allows it to handle non-linear patterns and outliers effectively.
